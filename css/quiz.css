@@ -1,0 +1,63 @@
+.quiz-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 486px;
+    box-shadow: 5px 6px 29px 13px hsla(0, 0%, 0%, 0.14);
+    border-radius: 2rem;
+    background: url("../img/gradient.jpg") center center no-repeat;
+    padding: 50px;
+}
+.quiz-container h3 {
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#start {
+    font-size: 2rem;
+}
+.quiz-container button {
+     padding: 20px 10px;
+     margin-bottom: 20px;
+     background: rgba(255, 255, 255, 0.4);
+     border: none;
+     border-radius: 16px;
+     font-size: 20px;
+     width: 400px;
+     height: 80px;
+     color: #2F4F4F;
+ }
+.quiz-container button:last-of-type {
+    margin-bottom: 0;
+}
+.quiz-container button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #ecfcff;
+    transform-origin: center;
+}
+.quiz-btn {
+    font-weight: 100;
+    font-family: 'Roboto',sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.quiz-btn:hover {
+    background-color: rgba(255,255,255,0.9);
+    color: #808080;
+}
+.quiz-btn:active {
+    background-color: rgba(255,255,255,0.7);
+    transition: none;
+}
+#resolve {
+    color: #fff;
+}
