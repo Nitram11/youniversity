@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youniversity | Find your favourite university!</title>
+    <meta name="description" content="Youniversity is the website to recommend you the most suitable university for the Junior Year for high school graduate students.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Roboto:100,400&display=swap" rel="stylesheet">
+    <script src="Question.js"></script>
+</head>
+<body>
+<header class="header-main">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <ul class="navbar">
+                <li class="nav-item current"><a href="#">Home</a></li>
+                <div class="dropdown">
+                  <li class="nav-item uni"><a href="universities.html">Universities</a></li>
+                  <div class="dropdown-content">
+                    <a class="droplist" href="categories.html">University Categories</a>
+                    <a class="droplist" href="admission-criteria.html">Admission Criteria</a>
+                  </div>
+                </div>
+                <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a href="reportbugs.html">Report Bugs</a></li>
+            </ul>
+        </div>
+        <div class="header-intro-main">
+            <div class="intro-text">
+                <h1 class="intro-title">
+                    Take the first step <br>
+                    to the better future <span>with us</span>
+                </h1>
+                <p class="intro-description">
+                    Be who you are. Know what you desire. Find out the best university, offering what you desire and promising a better <strong>You</strong>&nbsp.
+                </p>
+            </div>
+                <img class="intro-img" src="img/header-img.png" alt="intro-img">
+        </div>
+</header>
+<section class="intro-section section">
+    <div class="section-container">
+        <h1 class="section-title">Hello!</h1>
+        <div class="description">
+            <img class="float-left photo-left" src="img/info.svg" alt="">
+            <div class="description-text align-left">
+                <h2>Greetings!</h2>
+                <p>Welcome to our diverse and instructive resource for the students, in search of universities. We offer you the opportunity to gain insights into the universities with ease and comfort.</p>
+            </div>
+        </div>
+            <div class="description">
+                <img class="float-right photo-right" src="img/recommend.svg" alt="">
+                <div class="description-text align-right">
+                    <h2>Get Started!</h2>
+                    <p>Check out the most featured universities for this year below. Also don't forget to try the personality quiz to find out the best-suited universities for you. And go EXPLORE them.</p>
+                </div>
+        </div>
+    </div>
+</section>
+<section class="uni-section section">
+    <div class="section-container">
+        <div class="text-container">
+            <h1 class="section-title">Featured Universities</h1>
+            <p class="section-paragraph">These are the most featured universities of the year.</p>
+        </div>
+
+       <div class="scrolling-wrapper">
+           <div class="card card1">
+               <a href="universities/uit.html"><button class="featured-name">University of Information Technology</button></a>
+           </div>
+           <div class="card card2">
+               <a href="universities/yu.html"><button class="featured-name">Yangon University</button></a>
+           </div>
+           <div class="card card3">
+               <a href="universities/ytu.html"><button class="featured-name">Yangon Technological University</button></a>
+           </div>
+           <div class="card card4">
+               <a href="universities/um1.html"><button class="featured-name">University of Medicine 1, Yangon</button></a>
+           </div>
+       </div>
+    </div>
+</section>
+<section class="section quiz-section">
+  <div class="section-container">
+    <h1 class="section-title">Take a quiz and know where to go!</h1>
+    <div class="quiz-container">
+      <img id="graduate" src="img/mortarboard.svg">
+      <button class="quiz-btn" type="button" name="button" id="start" onclick="Try();">Start</button>
+      <h3 id='Quiz' style="display: none;"></h3>
+      <button class="quiz-btn" type="button" id="button1" style="display: none;" onclick="Click1();" value=0 ></button>
+      <button class="quiz-btn" type="button" id="button2" style="display: none;" onclick="Click2();" value=1></button>
+      <button class="quiz-btn" type="button" id="button3" style="display: none;" onclick="Click3();" value=2></button>
+      <h4 id="resolve" style="display: none;"></h4>
+    </div>
+  </div>
+</section>
+<section class="cta-section section">
+    <div class="section-container">
+        <h1 class="section-title">Choose your life journey</h1>
+        <div class="cta-container">
+            <div class="cta-card">
+                <img class="cta-photo" src="img/goal.svg" alt="aim-better">
+                <h3>Aim Better</h3>
+                <p>Live with goals, thrive towards aims and level up yourself</p>
+            </div>
+            <div class="cta-card">
+                <img class="cta-photo" src="img/turn.svg" alt="choose-wiser">
+                <h3>Choose Wiser</h3>
+                <p>Everything that matters is our choice, so choose your own future with a bigger picture</p>
+            </div>
+            <div class="cta-card">
+                <img class="cta-photo" src="img/bulb.svg" alt="shine-brighter">
+                <h3>Shine Brighter</h3>
+                <p>Life is short, make sure your choice lighten up your life and shine bright like a diamond</p>
+            </div>
+        </div>
+        <a class="border-eff" href="universities.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <button class="cta-btn">EXPLORE</button>
+        </a>
+    </div>
+
+</section>
+<footer class="footer-section">
+    <div class="footer-container">
+        <h5 class="footer-text">Made with ❤ by Group Dynothunder ⚡️</h5>
+        <p><small class="copyright-text">&copy; 2019 - Dynothunder</small></p>
+    </div>
+</footer>
+</body>
+</html>
